@@ -1,0 +1,41 @@
+N = 605; A = 0.1260; T = 0.1335; C = 0.1340; G = 0.0806;
+AA = 0; AT = 0; AC = 0; AG = 0;
+TA = 0; TT = 0; TC = 0; TG = 0;
+CA = 0; CT = 0; CC = 0; CG = 0;
+GA = 0; GT = 0; GC = 0; GG = 0;
+
+for j = 1:N;
+        if current_EIIP(i,j)/current_EIIP(i,j+1)==1 && current_EIIP(i,j)==A;
+            AA = AA + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==1 && current_EIIP(i,j)==T;
+            TT = TT + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==1 && current_EIIP(i,j)==C;
+            CC = CC + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==1 && current_EIIP(i,j)==G;
+            GG = GG + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==A/T && current_EIIP(i,j)==A;
+            AT = AT + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==A/C && current_EIIP(i,j)==A;
+            AC = AC + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==A/G && current_EIIP(i,j)==A;
+            AG = AG + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==T/A && current_EIIP(i,j)==T;
+            TA = TA + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==T/C && current_EIIP(i,j)==T;
+            TC = TC + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==T/G && current_EIIP(i,j)==T;
+            TG = TG + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==C/A && current_EIIP(i,j)==C;
+            CA = CA + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==C/T && current_EIIP(i,j)==C;
+            CT = CT + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==C/G && current_EIIP(i,j)==C;
+            CG = CG + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==G/A && current_EIIP(i,j)==G;
+            GA = GA + 1;
+        elseif current_EIIP(i,j)/current_EIIP(i,j+1)==G/T && current_EIIP(i,j)==G;
+            GT = GT + 1;
+        else current_EIIP(i,j)/current_EIIP(i,j+1)==G/C && current_EIIP(i,j)==G;
+            GC = GC + 1;
+        end
+end
