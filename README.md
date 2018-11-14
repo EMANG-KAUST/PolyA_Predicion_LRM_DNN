@@ -1,5 +1,5 @@
 # PolyA_Predicion_LRM_DNN
-# PolyA_Predicion_LRM_DNN
+
 
 PolyA Prediction using Logistic Regression Model (LRM) and Deep Neural Networks (DNN)
 
