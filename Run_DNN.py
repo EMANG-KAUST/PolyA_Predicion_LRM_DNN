@@ -10,7 +10,7 @@
 # Description
 # This script applys the trained DNN models using the extracted features from generating_the_features.m
 
-%% ###############################################################################
+###############################################################################
 
 import numpy as np 
 import scipy.io as sio
