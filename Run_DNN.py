@@ -1,14 +1,14 @@
-%% ######################### DNN Model ##########################
- % Author:  Somayah.Albaradei@kaust.edu.sa
+ ######################### DNN Model Using Python ##########################
+#  Author:  Somayah.Albaradei@kaust.edu.sa
    
- % Advicor : vladimir.bajic@kaust.edu.sa 
+#  Advicor : vladimir.bajic@kaust.edu.sa 
   
    
-% Done: May, 2018
+# Done: May, 2018
 
  
- %% Description
-% This script applys the trained DNN models using the extracted features from generating_the_features.m
+# Description
+# This script applys the trained DNN models using the extracted features from generating_the_features.m
 
 %% ###############################################################################
 
