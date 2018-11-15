@@ -1,3 +1,17 @@
+%% ######################### DNN Model ##########################
+ % Author:  Somayah.Albaradei@kaust.edu.sa
+   
+ % Advicor : vladimir.bajic@kaust.edu.sa 
+  
+   
+% Done: May, 2018
+
+ 
+ %% Description
+% This script applys the trained DNN models using the extracted features from generating_the_features.m
+
+%% ###############################################################################
+
 import numpy as np 
 import scipy.io as sio
 from sklearn.externals import joblib
@@ -20,7 +34,7 @@ motif='ATTAAA'
 
 #Step 2 convert mat to numpy and extract features as X_test and labels as y_test
 
-mat=motif+'_TS.mat'
+mat=motif+'_features.mat'
 mat_contents = sio.loadmat(mat)
 mat_FEATURE = mat_contents['features_TS']
 npdata=np.array(mat_FEATURE)
